@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG"> <!-- Change status to DEBUG -->
+    <Appenders>
+        <!-- File Appender -->
+        <File name="File" fileName="C:/Users/moham/OneDrive/Desktop/logs/application.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </File>
+        <!-- Console Appender (Optional) -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <!-- Log to File -->
+        <Root level="DEBUG"> <!-- Change level to DEBUG -->
+            <AppenderRef ref="File" />
+        </Root>
+        <!-- Log to Console (Optional) -->
+        <Root level="DEBUG"> <!-- Change level to DEBUG -->
+            <AppenderRef ref="Console" />
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,9 @@
+<div class="container">
+    <div *ngIf="Cart.cartItems.length === 0" class="text-center mt-3">No items in the cart</div>
+    <div *ngFor="let item of Cart.cartItems" class="mb-3">
+      <app-cart-item
+        [cartItem]="item">
+      </app-cart-item>
+    </div>
+  </div>
+

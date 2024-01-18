@@ -1,0 +1,8 @@
+<a class="card product-card" [routerLink]="['/products', index.toString()]" routerLinkActive="active">
+  <img [src]="product.imageUrl" class="card-img-top" alt="Product Image">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.title }}</h5>
+    <p class="card-text">Price: {{ product.price }}</p>
+    <!-- Add additional product details or buttons if needed -->
+  </div>
+</a>

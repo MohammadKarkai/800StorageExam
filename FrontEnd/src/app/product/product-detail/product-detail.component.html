@@ -1,0 +1,61 @@
+<!-- product-detail.component.html -->
+
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6">
+        <img src={{product.imageUrl}} alt="Product Image" class="img-fluid mb-3" />
+      </div>
+      <div class="col-md-6">
+        <h2>{{product.title}}</h2>
+        <p class="text-muted">Product Category</p>
+        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>{{product.price}} </p>
+        <button class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
+        <div class="form-group">
+          <label for="quantityInput">Quantity:</label>
+          <input 
+            type="number" 
+            id="quantityInput" 
+            name="quantityInput" 
+            [(ngModel)]="quantity"
+            class="form-control" 
+            min="1"
+            max="100" 
+          >
+        </div>
+      </div>
+    </div>
+  
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h3>Product Details</h3>
+        <ul class="list-group">
+          <li class="list-group-item">Size: Large</li>
+          <li class="list-group-item">Color: Blue</li>
+          <li class="list-group-item">Material: Cotton</li>
+          <!-- Add more details as needed -->
+        </ul>
+      </div>
+    </div>
+  
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h3>Customer Reviews</h3>
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">"Great product, highly recommended!"</p>
+            <p class="card-text"><small class="text-muted">- John Doe</small></p>
+          </div>
+        </div>
+        <!-- Add more reviews or a review form if needed -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-primary" (click)="Back()">Back</button>
+      </div>
+     
+    </div>
+  </div>
+  

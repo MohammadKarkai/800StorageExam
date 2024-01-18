@@ -1,0 +1,122 @@
+/* Your additional custom styles */
+.app-header {
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .form-control {
+    border-color: #fff;
+  }
+  
+  .btn-outline-light {
+    margin-left: 15px;
+  }
+  
+  /* Search Results */
+  .search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+  }
+  
+  .search-results li {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .search-results li:hover {
+    background-color: #f5f5f5;
+  }
+  /* Your additional custom styles */
+#searchInput {
+    border-radius: 20px;
+  }
+  
+  .search-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .search-dropdown .list-group {
+    padding: 0;
+  }
+  
+  .search-dropdown .list-group-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .search-dropdown .list-group-item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .position-relative {
+    position: relative;
+  }
+  
+  .position-absolute {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    width: calc(100% - 18px); /* Adjust as needed */
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .custom-search-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 12px;
+    width: 40rem
+  }
+
+  #searchItem:hover {
+    background-color: #f5f5f5; /* Change to your desired hover background color */
+    cursor: pointer; /* Show pointer cursor on hover */
+    /* Add any other styles for hover effect */
+  }
+  .hide-content {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .hide-content img,
+.hide-content p {
+  visibility: hidden;
+}
+
+.list-group-item.hide-content{
+    display: none !important;
+}
